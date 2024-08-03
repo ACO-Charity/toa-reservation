@@ -1,0 +1,3 @@
+[submodule "toa-reservation-frontend"]
+	path = toa-reservation-frontend
+	url = git@github.com:ACO-Charity/toa-reservation-frontend.git

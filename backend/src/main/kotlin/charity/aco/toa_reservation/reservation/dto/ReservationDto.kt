@@ -1,7 +1,10 @@
 package charity.aco.toa_reservation.reservation.dto
 
+import java.util.*
+
 data class ReservationDto(
-    private val firstName: String,
-    private val lastName: String,
-    private val email: String
+    val id: UUID? = null,
+    val firstName: String,
+    val lastName: String,
+    val email: String
 )

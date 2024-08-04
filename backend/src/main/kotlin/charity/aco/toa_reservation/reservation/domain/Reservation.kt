@@ -6,12 +6,17 @@ import jakarta.persistence.Entity
 
 @Entity
 data class Reservation(
-    private val firstName: String,
-    private val lastName: String,
-    private val email: String
+    var firstName: String = "",
+    var lastName: String = "",
+    var email: String = ""
 ) : BaseEntity() {
 
     fun toDto(): ReservationDto {
-        return ReservationDto(firstName, lastName, email)
+        return ReservationDto(
+            id = id,
+            firstName = firstName,
+            lastName = lastName,
+            email = email
+        )
     }
 }

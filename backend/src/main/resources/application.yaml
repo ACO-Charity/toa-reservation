@@ -1,3 +1,5 @@
+server:
+  forwardHeadersStrategy: framework
 spring:
   application:
     name: toa-reservation
